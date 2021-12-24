@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href=style.css>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h1>Exchange Rate</h1>
+        <form class="container">
+
+            <div class="row">
+                <label for="from">Exchange from:</label>
+                <input type="number" min="1" size="10">
+                <select id="fromCurrency" name="from">
+                    <option>EUR</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="to">to:</label>
+                <div class="value"></div>
+                <select id="toCurrency" name="to">
+                    <option>EUR</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="result">Result =</label>
+                <div id="result"></div>
+                <div id="resultCurrency"></div>
+            </div>
+    </form>
+
+    <div class="container">
+        <canvas id="graph" width="300" height="300"></canvas>
+    </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
